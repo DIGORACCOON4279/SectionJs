@@ -1,0 +1,93 @@
+.bestSellers{
+    display: grid;
+   place-items: center;
+    text-align: center;
+}
+
+.subtitle{
+        font-size:4rem;
+        color: #BC2327;
+        text-align: center;
+        margin-bottom: 100px;
+}
+
+.cardProducts{
+    width:250px;
+    height:380px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    &:hover{
+    box-shadow: 0 0 4px 2px #707070;
+    }
+}
+
+.article{
+    width:100%;
+    overflow: hidden;
+    &:hover > .outFit{
+        transform:scale(103%);
+        filter: grayscale(100%);
+        box-shadow: 0 0 4px 2px #707070;
+    }
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #313131;
+    font-weight: 400;
+    margin-top: 20px;
+    padding:20px;
+    background-color: #ffffff;
+    transform: translateY(-110%);
+    transition: transform 0.3s ease;
+    .heartIcon{
+        align-self: self-end;
+    }
+}
+.linkStore{
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    color: #D9D9D9;
+    font-weight: 500;
+    background-color: #BC2327;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    &:hover{
+        color: #BC2327;
+        background-color: #D9D9D9;
+        box-shadow: 0 0 4px 2px #BC2327;
+    }
+}
+
+.outFit{
+    width:inherit;
+
+    object-fit: cover;
+    object-position: center center;
+    vertical-align: middle;
+    filter: grayscale(20%);
+    box-shadow: 0 0 4px 2px rgb(112, 112, 112);
+    transition: all 0.3s ease;
+    &:hover > .info{
+        filter: grayscale(100%);
+    }
+}
+.ctaStore{
+    display:flex;
+    justify-content: center;
+    width: 200px;
+    padding:20px 40px;
+    color:#d9d9d9;
+    background-color: #3f3f3f;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    &:hover{
+        background-color:#BC2327 ;
+        box-shadow: 0 0 4px 2px rgb(112, 112, 112);
+        text-decoration: underline;
+    }
+}
+
