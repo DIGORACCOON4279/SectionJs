@@ -1,4 +1,8 @@
+
+
 /************************* DarkMode *****************************/
+
+
 // Pseudocodigo
 // *crear los estilos de background y color en css
 // *crear dos constantes en el archivo de js osea main:
@@ -11,6 +15,7 @@
 // toggleDarkMode.addEventListener("click", e =>{
 //     body.classList.toggle("roomDarkMode");
 // });
+
 
 const toggleDarkMode = document.querySelector('.toggleDarkMode');
 const body = document.querySelector('body');
