@@ -7,7 +7,7 @@ function validateEmail(email) {
 }
 
 function validatePassword(password) {
-    return password.length === 6 && !isNaN(password);
+    return password.length === 6 && !isNaN(password) && !password.includes(".");
 }
 
 function containsOnlyLetters(text) {

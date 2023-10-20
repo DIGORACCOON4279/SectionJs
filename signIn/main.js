@@ -15,12 +15,12 @@ function signIn() {
 
     while (email.indexOf('@') === -1 || email.indexOf('.com') === -1) {
         alert("Incorrect email. Make sure to include '@' and '.com'.");
-        email = prompt("IEnter your email address:");
+        email = prompt("Enter your email address:");
     }
 
     let password = prompt("Enter your password:(6 numbers):");
 
-    while (isNaN(password) || password.length !== 6) {
+    while (isNaN(password) || password.length !== 6 || password.includes(".")){
         alert("Incorrect password. Make sure to enter 6 numbers.");
         password = prompt("Enter your password (6 numbers):");
     }
