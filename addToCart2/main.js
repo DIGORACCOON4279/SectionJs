@@ -189,11 +189,7 @@ while (true) {
       } else {
         alert(`El producto con ID ${productIdToAddToCart} no fue encontrado.`);
       }
-      break;
-
-
-
-
+    break;
 
     case "2":
       if (cart.items.length === 0) {
@@ -209,97 +205,88 @@ while (true) {
           alert(`El producto con ID ${productIdToRemoveFromCart} no fue encontrado en el carrito.`);
         }
       }
-      break;
+    break;
 
 
-      case "3":
-  if (cart.items.length === 0) {
-    alert("El carrito de compras está vacío.");
-  } else {
-    let cartList = "Productos en el carrito:\n";
-    let totalAmount = 0;
+  case "3":
+    if (cart.items.length === 0) {
+      alert("El carrito de compras está vacío.");
+    } else {
+      let cartList = "Productos en el carrito:\n";
+      let totalAmount = 0;
 
-    cart.items.forEach((product) => {
-      const productName = product.name;
-      const productColor = product.colors[product.colorChoice - 1];
-      const productPrice = product.price;
+      cart.items.forEach((product) => {
+        const productName = product.name;
+        const productColor = product.colors[product.colorChoice - 1];
+        const productPrice = product.price;
 
-      // Calculamos el precio total de este producto y color
-      const productTotal = productPrice;
+        // Calculamos el precio total de este producto y color
+        const productTotal = productPrice;
 
-      cartList += `${productName} - Color: ${productColor} - $${productTotal}\n`;
+        cartList += `${productName} - Color: ${productColor} - $${productTotal}\n`;
 
-      // Agregamos el precio total de este producto y color al total general
-      totalAmount += productTotal;
-    });
+        // Agregamos el precio total de este producto y color al total general
+        totalAmount += productTotal;
+      });
 
-    // const shippingCost = totalAmount >= 1000 ? "Envío: GRATIS" : `Costo de Envío: $10`;
-    totalAmount += totalAmount >= 1000 ? 0 : 10;
-    // const purchaseDetails = `Precio de compra: ${totalAmount}\n${shippingCost}\nCosto Total (incluyendo envío): $${totalAmount}`;
-    // ${purchaseDetails}
+      // const shippingCost = totalAmount >= 1000 ? "Envío: GRATIS" : `Costo de Envío: $10`;
+      totalAmount += totalAmount >= 1000 ? 0 : 10;
+      // const purchaseDetails = `Precio de compra: ${totalAmount}\n${shippingCost}\nCosto Total (incluyendo envío): $${totalAmount}`;
+      // ${purchaseDetails}
 
-    alert(`${cartList}\n`);
-  }
+      alert(`${cartList}\n`);
+    }
   break;
 
 
+  case "4":
+    if (cart.items.length === 0) {
+      alert("No has agregado ningún producto al carrito. Por favor, agrega productos antes de realizar la compra.");
+    } else {
+      // Calcula el costo total de los productos en el carrito
+      let totalAmount = 0;
+      cart.items.forEach((product) => {
+        totalAmount += product.price;
+      });
 
-
-
-
-
-
-
-
-
-      case "4":
-        if (cart.items.length === 0) {
-          alert("No has agregado ningún producto al carrito. Por favor, agrega productos antes de realizar la compra.");
-        } else {
-          // Calcula el costo total de los productos en el carrito
-          let totalAmount = 0;
-          cart.items.forEach((product) => {
-            totalAmount += product.price;
-          });
-
-          // Pregunta si el usuario quiere agregar un hoddy con descuento
-          if (totalAmount >= 1000) {
-            const decision = prompt("Tu compra supera los $1000. ¿Deseas agregar un hoddy con un precio de $499 y un descuento del 25%? (Presiona 1 para Sí, 0 para No):");
-            if (decision === "1") {
-              totalAmount += 374.25; // Precio del hoddy con descuento del 25%
-            }
-          }
-
-          // Calcula el costo de envío
-          let shippingCost = totalAmount >= 1000 ? 0 : 10;
-
-          // Calcula el costo total
-          const totalWithShipping = totalAmount + shippingCost;
-
-          // Muestra los detalles de la compra
-          alert(`Costo total de los productos: $${totalAmount}\nCosto de envío: $${shippingCost}\nCosto Total (incluyendo envío): $${totalWithShipping}`);
-
-          // Elimina productos del carrito
-          cart.items = [];
-
-          hasPurchased = true;
-          alert("¡Gracias por confiar en nosotros, te esperamos nuevamente. Hasta pronto!");
+      // Pregunta si el usuario quiere agregar un hoddy con descuento
+      if (totalAmount >= 1000) {
+        const decision = prompt("Tu compra supera los $1000. ¿Deseas agregar un hoddy con un precio de $499 y un descuento del 25%? (Presiona 1 para Sí, 0 para No):");
+        if (decision === "1") {
+          totalAmount += 374.25; // Precio del hoddy con descuento del 25%
         }
-        break;
-
-
-    case "5":
-      const productIdToAddToFavorites = prompt("Ingresa el ID del producto que deseas agregar a tus favoritos (1, 2 o 3):");
-      const productToAddToFavorites = products.find((product) => product.id === Number(productIdToAddToFavorites));
-      if (productToAddToFavorites) {
-        cart.addFavorite(productToAddToFavorites);
-        alert(`¡${productToAddToFavorites} ha sido agregado a tus favoritos!`);
-      } else {
-        alert(`El producto con ID ${productIdToAddToFavorites} no fue encontrado.`);
       }
-      break;
 
-    case "6":
+      // Calcula el costo de envío
+      let shippingCost = totalAmount >= 1000 ? 0 : 10;
+
+      // Calcula el costo total
+      const totalWithShipping = totalAmount + shippingCost;
+
+      // Muestra los detalles de la compra
+      alert(`Costo total de los productos: $${totalAmount}\nCosto de envío: $${shippingCost}\nCosto Total (incluyendo envío): $${totalWithShipping}`);
+
+      // Elimina productos del carrito
+      cart.items = [];
+
+      hasPurchased = true;
+      alert("¡Gracias por confiar en nosotros, te esperamos nuevamente. Hasta pronto!");
+    }
+  break;
+
+
+  case "5":
+    const productIdToAddToFavorites = prompt("Ingresa el ID del producto que deseas agregar a tus favoritos (1, 2 o 3):");
+    const productToAddToFavorites = products.find((product) => product.id === Number(productIdToAddToFavorites));
+    if (productToAddToFavorites) {
+      cart.addFavorite(productToAddToFavorites);
+      alert(`¡${productToAddToFavorites} ha sido agregado a tus favoritos!`);
+    } else {
+      alert(`El producto con ID ${productIdToAddToFavorites} no fue encontrado.`);
+    }
+  break;
+
+  case "6":
       if (cart.favorites.length === 0) {
         alert("No tienes productos favoritos. No se pueden eliminar productos.");
       } else {
@@ -312,7 +299,7 @@ while (true) {
           alert(`El producto con ID ${productIdToRemoveFromFavorites} no fue encontrado en tus favoritos.`);
         }
       }
-      break;
+    break;
 
     case "7":
       cart.viewFavorites();

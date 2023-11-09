@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+<body>
+    <h1>Filter</h1>
+    <nav class="menuFilter">
+        <label for="filterSide">
+            <img class="closeCross" src="../img/close_Cross.svg" alt="Close cross icon">
+        </label>
+        <div class="choiceFilter">
+            <h3 class="filterWord">Filter</h3>
+            <div class="sectionAvailability">
+                <h3 class="titleAvailability">Availability</h3>
+                <article class="availability">
+
+                        <label for="inStock" class="labelOne">
+                            <input type="checkbox" id="inStock">In-stock
+                        </label>
+
+                        <label for="newArrivals" class="labelTwo">
+                            <input type="checkbox" id="newArrivals">New Arrivals
+                        </label>
+
+                        <label for="soldOut" class="labelThree">
+                            <input type="checkbox"  id="soldOut">Sold-out
+                        </label>
+
+                </article>
+            </div>
+            <div class="sectionPricing">
+                <h3 class="titlePricing">Pricing</h3>
+                <article class="pricing">
+
+                        <label for="priceOne" class="priceOne">
+                            <input type="checkbox" id="priceOne">$499
+                        </label>
+
+                        <label for="priceTwo" class="priceTwo">
+                            <input type="checkbox" id="priceTwo">$599
+                        </label>
+
+                        <label for="priceThree" class="priceThree">
+                            <input type="checkbox" id="priceThree">$999
+                        </label>
+
+                </article>
+            </div>
+            <button class="btnFilter">Filter</button>
+        </div>
+    </nav>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

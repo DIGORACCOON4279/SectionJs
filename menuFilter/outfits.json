@@ -1,0 +1,200 @@
+[
+    {
+        "id": 1,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 499,
+        "image": "img/pic1.webp"
+    },
+    {
+        "id": 2,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 599,
+        "image": "img/pic2.webp"
+    },
+    {
+        "id": 3,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 999,
+        "image": "img/pic3.webp"
+    },
+    {
+        "id": 4,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 599,
+        "image": "img/pic4.webp"
+    },
+    {
+        "id": 5,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 499,
+        "image": "img/pic5.webp"
+    },
+    {
+        "id": 6,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 499,
+        "image": "img/pic6.webp"
+    },
+    {
+        "id": 7,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 599,
+        "image": "img/pic7.webp"
+    },
+    {
+        "id": 8,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 599,
+        "image": "img/pic8.webp"
+    },
+    {
+        "id": 9,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 999,
+        "image": "img/pic9.webp"
+    },
+    {
+        "id": 10,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 999,
+        "image": "img/pic10.webp"
+    },
+    {
+        "id": 11,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 599,
+        "image": "img/pic11.webp"
+    },
+    {
+        "id": 12,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 499,
+        "image": "img/pic12.webp"
+    },
+    {
+        "id": 13,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 499,
+        "image": "img/pic13.webp"
+    },
+    {
+        "id": 14,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 999,
+        "image": "img/pic14.webp"
+    },
+    {
+        "id": 15,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 999,
+        "image": "img/pic15.webp"
+    },
+    {
+        "id": 16,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 499,
+        "image": "img/pic16.webp"
+    },
+    {
+        "id": 17,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 599,
+        "image": "img/pic17.webp"
+    },
+    {
+        "id": 18,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 999,
+        "image": "img/pic18.webp"
+    },
+    {
+        "id": 19,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 499,
+        "image": "img/pic19.webp"
+    },
+    {
+        "id": 20,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 499,
+        "image": "img/pic20.webp"
+    },
+    {
+        "id": 21,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 599,
+        "image": "img/pic21.webp"
+    },
+    {
+        "id": 22,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 999,
+        "image": "img/pic22.webp"
+    },
+    {
+        "id": 23,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 999,
+        "image": "img/pic23.webp"
+    },
+    {
+        "id": 24,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 499,
+        "image": "img/pic24.webp"
+    },
+    {
+        "id": 25,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 599,
+        "image": "img/pic25.webp"
+    }
+    {
+        "id": 26,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 999,
+        "image": "img/pic26.webp"
+    }
+    {
+        "id": 27,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 599,
+        "image": "img/pic27.webp"
+    }
+    {
+        "id": 28,
+        "title": "Street",
+        "availability": "New Arrivals",
+        "pricing": 999,
+        "image": "img/pic28.webp"
+    }
+]
+
+
