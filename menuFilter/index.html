@@ -4,15 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filter</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(221, 221, 221);
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .menuFilter{
+            width: 20vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            box-shadow: 0 0 6px 6px #919191;
+            position: fixed;
+            top:0;
+            left:0;
+        }
+        .choiceFilter{
+            width: 100%;
+            padding: 30px;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            gap:60px;
+        }
+        .sectionAvailability .availability, .sectionPricing, .pricing{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            gap: 5px;
+            margin:20px auto;
+        }
+        .btnFilter{
+            width:100%;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 15px 20px;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Filter</h1>
-    <nav class="menuFilter">
-        <label for="filterSide">
-            <img class="closeCross" src="../img/close_Cross.svg" alt="Close cross icon">
-        </label>
-        <div class="choiceFilter">
-            <h3 class="filterWord">Filter</h3>
+    <header class="menuFilter">
+        <nav class="choiceFilter">
+            <h2 class="filterWord">Filter</h2>
             <div class="sectionAvailability">
                 <h3 class="titleAvailability">Availability</h3>
                 <article class="availability">
@@ -26,7 +70,7 @@
                         </label>
 
                         <label for="soldOut" class="labelThree">
-                            <input type="checkbox"  id="soldOut">Sold-out
+                            <input type="checkbox"  id="soldOut">Sold-out</input>
                         </label>
 
                 </article>
@@ -49,10 +93,22 @@
 
                 </article>
             </div>
-            <button class="btnFilter">Filter</button>
-        </div>
-    </nav>
+            <button type="button" class="btnFilter">Filter</button>
+            </div>
+        </nav>
+    </header>
 
+<!-- Main container -->
+
+    <main class="container">
+
+    <!-- Section Cards -->
+
+
+    <section class="cardsOutfit">
+
+    </section>
+</main>
     <script src="main.js"></script>
 
 </body>
