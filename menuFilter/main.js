@@ -190,5 +190,49 @@
 // }
 
 
+  // Función para aplicar filtros
+  function applyFilters() {
+    const inStock = document.getElementById('inStock').checked;
+    const newArrivals = document.getElementById('newArrivals').checked;
+    const soldOut = document.getElementById('soldOut').checked;
 
+    const priceOne = document.getElementById('priceOne').checked;
+    const priceTwo = document.getElementById('priceTwo').checked;
+    const priceThree = document.getElementById('priceThree').checked;
 
+    const products = document.querySelectorAll('.product');
+
+    products.forEach(product => {
+      const isProductInStock = product.classList.contains('inStock');
+      const isProductNewArrival = product.classList.contains('newArrivals');
+      const isProductSoldOut = product.classList.contains('soldOut');
+
+      const isPriceOne = product.classList.contains('priceOne');
+      const isPriceTwo = product.classList.contains('priceTwo');
+      const isPriceThree = product.classList.contains('priceThree');
+
+      // Mostrar u ocultar productos según las selecciones del usuario
+      if (
+        (inStock && isProductInStock) ||
+        (newArrivals && isProductNewArrival) ||
+        (soldOut && isProductSoldOut) ||
+        (!inStock && !newArrivals && !soldOut)
+      ) {
+        if (
+          (priceOne && isPriceOne) ||
+          (priceTwo && isPriceTwo) ||
+          (priceThree && isPriceThree) ||
+          (!priceOne && !priceTwo && !priceThree)
+        ) {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      } else {
+        product.style.display = 'none';
+      }
+    });
+  }
+
+  // Escuchar el clic en el botón de filtro
+  document.querySelector('.btnFilter').addEventListener('click', applyFilters);

@@ -1,14 +1,14 @@
 [
     {
         "id": 1,
-        "title": "Street",
+        "title": "Xtreme",
         "availability": "New Arrivals",
         "pricing": 499,
         "image": "img/pic1.webp"
     },
     {
         "id": 2,
-        "title": "Street",
+        "title": "Aggressive",
         "availability": "New Arrivals",
         "pricing": 599,
         "image": "img/pic2.webp"
@@ -22,7 +22,7 @@
     },
     {
         "id": 4,
-        "title": "Street",
+        "title": "Xtreme",
         "availability": "New Arrivals",
         "pricing": 599,
         "image": "img/pic4.webp"
@@ -36,14 +36,14 @@
     },
     {
         "id": 6,
-        "title": "Street",
+        "title": "Aggressive",
         "availability": "New Arrivals",
         "pricing": 499,
         "image": "img/pic6.webp"
     },
     {
         "id": 7,
-        "title": "Street",
+        "title": "Aggressive",
         "availability": "New Arrivals",
         "pricing": 599,
         "image": "img/pic7.webp"
@@ -57,14 +57,14 @@
     },
     {
         "id": 9,
-        "title": "Street",
+        "title": "Aggressive",
         "availability": "New Arrivals",
         "pricing": 999,
         "image": "img/pic9.webp"
     },
     {
         "id": 10,
-        "title": "Street",
+        "title": "Xtreme",
         "availability": "New Arrivals",
         "pricing": 999,
         "image": "img/pic10.webp"
@@ -78,21 +78,21 @@
     },
     {
         "id": 12,
-        "title": "Street",
+        "title": "Aggressive",
         "availability": "New Arrivals",
         "pricing": 499,
         "image": "img/pic12.webp"
     },
     {
         "id": 13,
-        "title": "Street",
+        "title": "Xtreme",
         "availability": "New Arrivals",
         "pricing": 499,
         "image": "img/pic13.webp"
     },
     {
         "id": 14,
-        "title": "Street",
+        "title": "Aggressive",
         "availability": "New Arrivals",
         "pricing": 999,
         "image": "img/pic14.webp"
@@ -106,7 +106,7 @@
     },
     {
         "id": 16,
-        "title": "Street",
+        "title": "Aggressive",
         "availability": "New Arrivals",
         "pricing": 499,
         "image": "img/pic16.webp"
@@ -120,21 +120,21 @@
     },
     {
         "id": 18,
-        "title": "Street",
+        "title": "Xtreme",
         "availability": "New Arrivals",
         "pricing": 999,
         "image": "img/pic18.webp"
     },
     {
         "id": 19,
-        "title": "Street",
+        "title": "Aggressive",
         "availability": "New Arrivals",
         "pricing": 499,
         "image": "img/pic19.webp"
     },
     {
         "id": 20,
-        "title": "Street",
+        "title": "Aggressive",
         "availability": "New Arrivals",
         "pricing": 499,
         "image": "img/pic20.webp"
@@ -148,14 +148,14 @@
     },
     {
         "id": 22,
-        "title": "Street",
+        "title": "Aggressive",
         "availability": "New Arrivals",
         "pricing": 999,
         "image": "img/pic22.webp"
     },
     {
         "id": 23,
-        "title": "Street",
+        "title": "Xtreme",
         "availability": "New Arrivals",
         "pricing": 999,
         "image": "img/pic23.webp"
@@ -169,7 +169,7 @@
     },
     {
         "id": 25,
-        "title": "Street",
+        "title": "Aggressive",
         "availability": "New Arrivals",
         "pricing": 599,
         "image": "img/pic25.webp"
@@ -183,14 +183,14 @@
     }
     {
         "id": 27,
-        "title": "Street",
+        "title": "Xtreme",
         "availability": "New Arrivals",
         "pricing": 599,
         "image": "img/pic27.webp"
     }
     {
         "id": 28,
-        "title": "Street",
+        "title": "Aggressive",
         "availability": "New Arrivals",
         "pricing": 999,
         "image": "img/pic28.webp"
